@@ -63,7 +63,6 @@ jobs:
                 - SPRING_DATASOURCE_PASSWORD
               restart: always" > docker-compose.yml
 
-      # 8. Desplegar en AWS Elastic Beanstalk
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
         with:
